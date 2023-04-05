@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 1px
+}
+body{
+    background-color: brown;
+    max-width: auto;
+    max-height: auto;
+}
+.slider{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slider-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;/* vh da uzima cijelu visinu trenutnog  ekrana*/
+}
+.slider__btn-left, 
+.slider__btn-right{
+    background: rgb(0, 0, 0, 0.3);
+    border: none;
+    outline: none;
+    font-size: 30px;
+    color: white;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+} 
+@media(hover:hover){
+    .slider__btn-left:hover, 
+    .slider__btn-right:hover{
+        color: black;
+    }
+    /*.slider__btn-left{
+    animation: go;
+    animation-duration: 2s;
+    }
+    @keyframes go {
+    function sliderCounter();    
+    } */
+
+}
+.slider-feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    line-height: 50px;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+.slider-btn{
+    cursor: pointer;
+    height: 20px;
+    width: 80px;
+    border: rgb(97, 82, 82) solid 1px;
+    background-color: rgb(186, 226, 43, 0.4);
+    border-radius: 2px;
+    text-align: center;
+    line-height: 20px;
+}
+.slider-title{
+    font-size: 50px;
+}
+.slider-text{
+    font-size: 18px;
+}
